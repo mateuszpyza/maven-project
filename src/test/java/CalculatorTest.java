@@ -9,33 +9,45 @@ class CalculatorTest {
     @Test
     void shouldReturnProperSumResults() {
         //given
-        double firstValue=1.5;
-        double secondValue=3.5;
+        double firstValue = 1.5;
+        double secondValue = 3.5;
         //when
-        double result=Calculator.sum(firstValue,secondValue);
+        double result = Calculator.sum(firstValue, secondValue);
         //then
-        Assertions.assertEquals(5,result);
+        Assertions.assertEquals(5, result);
     }
 
     @Test
     void shouldReturnProperSubtractionResults() {
         //given
-        double firstValue=10;
-        double secondValue=2;
+        double firstValue = 8;
+        double secondValue = 3;
         //when
-        double result=Calculator.subtraction(firstValue,secondValue);
+        double result = Calculator.subtract(firstValue, secondValue);
         //then
-        Assertions.assertEquals(5,result);
+        Assertions.assertEquals(5, result);
     }
 
     @Test
     void shouldReturnProperMultiplicationResults() {
-        Assertions.assertEquals(5,Calculator.multiplication(2.5,2));
+        //given
+        double firstValue = 2.5;
+        double secondValue = 2;
+        //when
+        double result = Calculator.multiply(firstValue, secondValue);
+        //then
+        Assertions.assertEquals(5, result);
     }
 
     @Test
     void shouldReturnProperDivisionResults() {
-        Assertions.assertEquals(5,Calculator.division(125,25));
+        //given
+        double firstValue = 125;
+        double secondValue = 25;
+        //when
+        double result = Calculator.divide(firstValue, secondValue);
+        //then
+        Assertions.assertEquals(5, result);
 
     }
 }
