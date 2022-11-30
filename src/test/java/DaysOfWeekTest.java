@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class DaysOfWeekTest {
 
     @Test
-    void getMonday() {
+    void shouldGetMonday() {
         //given
         int numberOfDay = 1;
         //when
@@ -15,7 +15,7 @@ class DaysOfWeekTest {
     }
 
     @Test
-    void getTuesday() {
+    void shouldGetTuesday() {
         //given
         int numberOfDay = 2;
         //when
@@ -25,7 +25,7 @@ class DaysOfWeekTest {
     }
 
     @Test
-    void getWednesday() {
+    void shouldGetWednesday() {
         //given
         int numberOfDay = 3;
         //when
@@ -35,7 +35,7 @@ class DaysOfWeekTest {
     }
 
     @Test
-    void getThursday() {
+    void shouldGetThursday() {
         //given
         int numberOfDay = 4;
         //when
@@ -45,7 +45,7 @@ class DaysOfWeekTest {
     }
 
     @Test
-    void getFriday() {
+    void shouldGetFriday() {
         //given
         int numberOfDay = 5;
         //when
@@ -55,7 +55,7 @@ class DaysOfWeekTest {
     }
 
     @Test
-    void getWeekend() {
+    void shouldGetWeekend() {
         //given
         int numberOfDay = 6;
         //when
@@ -65,7 +65,7 @@ class DaysOfWeekTest {
     }
 
     @Test
-    void getError() {
+    void shouldGetError() {
         //given
         int numberOfDay = 88;
         //when
