@@ -1,5 +1,5 @@
 public class Age {
-    public static boolean isAgeAboveThenOrEqualToEighteen(int age) {
+    public static boolean isAdult(int age) {
         return age >= 18;
     }
 }

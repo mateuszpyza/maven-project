@@ -8,7 +8,7 @@ class AgeTest {
         //given
         int age = 22;
         //when
-        boolean result = Age.isAgeAboveThenOrEqualToEighteen(age);
+        boolean result = Age.isAdult(age);
         //then
         Assertions.assertTrue(result);
 
@@ -19,7 +19,7 @@ class AgeTest {
         //given
         int age = 18;
         //when
-        boolean result = Age.isAgeAboveThenOrEqualToEighteen(age);
+        boolean result = Age.isAdult(age);
         //then
         Assertions.assertTrue(result);
 
@@ -30,7 +30,7 @@ class AgeTest {
         //given
         int age = 15;
         //when
-        boolean result = Age.isAgeAboveThenOrEqualToEighteen(age);
+        boolean result = Age.isAdult(age);
         //then
         Assertions.assertFalse(result);
 
