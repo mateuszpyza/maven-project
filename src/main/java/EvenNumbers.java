@@ -3,6 +3,6 @@ public class EvenNumbers {
         return checkingNumber%2==0;
     }
     public static boolean isOddNumber(int checkingNumber){
-        return !(checkingNumber%2==0);
+        return checkingNumber%2!=0;
     }
 }

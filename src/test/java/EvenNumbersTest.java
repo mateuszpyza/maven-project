@@ -6,7 +6,7 @@ class EvenNumbersTest {
 
     //Test first method isEvenNumber
     @Test
-    void shouldBeEvenMethodMethodIsEven() {
+    void shouldBeEvenWhenCheckingIfEven() {
         //given
         int checkingNumber = 18;
         //when
@@ -16,7 +16,7 @@ class EvenNumbersTest {
     }
 
     @Test
-    void shouldBeOddMethodMethodIsEven() {
+    void shouldBeOddWhenCheckingIfEven() {
         //given
         int checkingNumber = 9;
         //when
@@ -26,9 +26,8 @@ class EvenNumbersTest {
     }
 
 
-    //Test second method isOddNumber
     @Test
-    void shouldBeEvenMethodIsOdd() {
+    void shouldBeOddWhenCheckingIfOdd() {
         //given
         int checkingNumber = 9;
         //when
@@ -38,7 +37,7 @@ class EvenNumbersTest {
     }
 
     @Test
-    void shouldBeOddMethodIsOdd() {
+    void shouldBeEvenWhenCheckingIfOdd() {
         //given
         int checkingNumber = 22;
         //when
