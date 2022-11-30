@@ -4,35 +4,35 @@ import org.junit.jupiter.api.Test;
 class AgeTest {
 
     @Test
-    void isAgeYoungerThenEighteen() {
+    void shouldBeTrueWhenAgeAboveEighteen() {
         //given
-        int age = 15;
+        int age = 22;
         //when
-        boolean result = Age.isAgeLessThenOrEqualToEighteen(age);
+        boolean result = Age.isAgeAboveThenOrEqualToEighteen(age);
         //then
         Assertions.assertTrue(result);
 
     }
 
     @Test
-    void isAgeEqualToEighteen() {
+    void shouldBeTrueWhenAgeEqualsEighteen() {
         //given
         int age = 18;
         //when
-        boolean result = Age.isAgeLessThenOrEqualToEighteen(age);
+        boolean result = Age.isAgeAboveThenOrEqualToEighteen(age);
         //then
         Assertions.assertTrue(result);
 
     }
 
     @Test
-    void isAgeOlderThenEighteen() {
+    void shouldBeFalseWhenAgeUnderEighteen() {
         //given
         int age = 15;
         //when
-        boolean result = Age.isAgeLessThenOrEqualToEighteen(age);
+        boolean result = Age.isAgeAboveThenOrEqualToEighteen(age);
         //then
-        Assertions.assertTrue(result);
+        Assertions.assertFalse(result);
 
     }
 }
